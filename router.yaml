@@ -1,0 +1,16 @@
+# This is a top-level key. It MUST define at least one of the two
+# sub-keys shown, even if you use that subkey's default value.
+cors:
+  allow_any_origin: true
+rhai:
+  # Specify a different Rhai script directory path with this key.
+  # The path can be relative or absolute.
+  scripts: "/dist/rhai"
+
+  # Specify a different name for your "main" Rhai file with this key.
+  # The router looks for this filename in your Rhai script directory.
+  main: "test.rhai"
+supergraph:
+  # Do not enable introspection in production!
+  introspection: true
+  listen: 0.0.0.0:4000
